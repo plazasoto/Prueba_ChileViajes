@@ -32,7 +32,7 @@
 <body>
     <!-- Barra de Navegación -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-info fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <div class="container px-4">
                 <!-- Logo y enlace a la página principal -->
                 <a class="navbar-brand text-light" href="#">
@@ -174,11 +174,11 @@
         <form>
             <div class="form-group my-2">
                 <label for="textoNombre">Nombre</label>
-                <input id="textoNombre" type="text" class="form-control" placeholder="Nombre">
+                <input id="textoNombre" type="text" class="form-control" placeholder="">
             </div>
             <div class="form-group my-2">
                 <label for="textoAsunto">Asunto</label>
-                <input id="textoAsunto" type="text" class="form-control" placeholder="Asunto">
+                <input id="textoAsunto" type="text" class="form-control" placeholder="">
             </div>
             <div class="form-group my-2">
                 <label for="">Mensaje</label>
@@ -191,39 +191,43 @@
     </section>
 
     <!-- Footer -->
-    <footer class="container-fluid d-none d-sm-none d-md-block py-5 bg-dark">
-        <div class="container">
+    <footer class="container-fluid d-none d-sm-none d-md-block pt-4 pb-2 bg-info text-light">
+        <div class="container text-center">
             <div class="row">
-                <div class="col-5">
-                    <h2 class="text-light fw-bold display-5">
+                <div class="col-6">
+                    <h2>
                         VIAJES CHILE
                     </h2>
                 </div>
-                <div class="col-7">
-                    <div class="row text-light">
-                        <!-- Iconos de diferentes tarjetas y métodos de pago -->
-                        <div class="col-2">
-                            <i class="fa-brands fa-square-github"></i>
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-1">
+                            <a href="https://github.com/">
+                                <i class="fa-brands fa-square-github display-6 text-light"></i>
+                            </a>
                         </div>
-                        <div class="col-2">
-                            <i class="fa-brands fa-linkedin"></i>
+                        <div class="col-1">
+                            <a href="https://www.linkedin.com/">
+                                <i class="fa-brands fa-linkedin display-6 text-light"></i>
+                            </a>
+                            
                         </div>
-                        <div class="col-2">
-                            <i class="fa-brands fa-square-twitter"></i>
+                        <div class="col-1">
+                            <a href="https://twitter.com/">
+                                <i class="fa-brands fa-square-twitter display-6 text-light"></i>
+                            </a>
+                            
                         </div>
-                        <div class="col-2">
-                            <i class="fa-brands fa-square-facebook"></i>
+                        <div class="col-1">
+                            <a href="https://facebook.com/">
+                                <i class="fa-brands fa-square-facebook display-6 text-light"></i>
+                            </a>
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--Iconos Font Awesome
-                <i class="fa-brands fa-square-github"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-square-twitter"></i>
-                <i class="fa-brands fa-square-facebook"></i>
-            -->
     </footer>
 
     <!-- Bootstrap -->
