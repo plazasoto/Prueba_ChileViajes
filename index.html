@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chile Viajes</title>
+    <title>Chile Viajes</title> 
+    <meta name="author" content="Pablo Plaza">
 
-    <link rel="shortcut icon" href="./assets/img/viajes.svg"> <!-- type="image/x-icon"-->
+    <link rel="shortcut icon" href="./assets/img/viajes.svg">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +24,7 @@
     <script src="https://kit.fontawesome.com/22da36f2f3.js" crossorigin="anonymous"></script>
 
 
-
+    <!-- css local -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
 
@@ -94,7 +95,7 @@
     </section>
 
     <!-- Presentación -->
-    <section class="container text-light d-none d-sm-none d-md-block" id="Presentacion">
+    <section class="container text-light d-none d-sm-none d-md-block pt-4" id="Presentacion">
         <h2 class="text-center my-4">¿QUIÉNES SOMOS?</h2>
         <hr>
         <div class="row">
@@ -120,11 +121,11 @@
     </section>
 
     <!-- Destacados -->
-    <section class="container text-light" id="Destacados">
+    <section class="container text-light pt-4" id="Destacados">
         <h2 class="text-center my-4">DESTACADOS</h2>
         <hr>
-        <div class="row">
-            <div class="card col-3 bg-info px-0 border-light text-light">
+        <div class="row justify-content-evenly">
+            <div class="card col-12 col-sm-6 col-lg-3 bg-info px-0 border-light text-light">
                 <img src="./assets/img/card1.jpg" class="card-img-top" alt="Destacado 1"
                 height="150">
                 <div class="card-body">
@@ -134,7 +135,7 @@
                     </p>
                 </div>
             </div>
-            <div class="card col-3 bg-info px-0 border-light text-light">
+            <div class="card col-12 col-sm-6 col-lg-3 bg-info px-0 border-light text-light">
                 <img src="./assets/img/card2.jpg" class="card-img-top" alt="Destacado 2"
                 height="150">
                 <div class="card-body">
@@ -144,7 +145,7 @@
                     </p>
                 </div>
             </div>
-            <div class="card col-3 bg-info px-0 border-light text-light">
+            <div class="card col-12 col-sm-6 col-lg-3 bg-info px-0 border-light text-light">
                 <img src="./assets/img/card3.jpg" class="card-img-top" alt="Destacado 3"
                 height="150">
                 <div class="card-body">
@@ -154,7 +155,7 @@
                     </p>
                 </div>
             </div>
-            <div class="card col-3 bg-info px-0 border-light text-light">
+            <div class="card col-12 col-sm-6 col-lg-3 bg-info px-0 border-light text-light">
                 <img src="./assets/img/card4.jpg" class="card-img-top" alt="Destacado 4"
                 height="150">
                 <div class="card-body">
@@ -185,22 +186,30 @@
                 <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
             </div>
             <div class="text-start my-2">
-                <button type="button" class="btn btn-info text-light">Enviar</button>
+                <button type="button" class="btn btn-info text-light"
+                data-bs-toggle="tooltip" data-bs-placement="right"
+                data-bs-custom-class="tooltip-azul"
+                data-bs-title="Presiona para enviarnos tu mensaje.">
+                    Enviar
+                </button>
             </div>
         </form>
     </section>
 
     <!-- Footer -->
-    <footer class="container-fluid d-none d-sm-none d-md-block pt-4 pb-2 bg-info text-light">
+    <footer class="container-fluid pt-4 pb-2 bg-info text-light">
         <div class="container text-center">
             <div class="row">
                 <div class="col-6">
-                    <h2>
+                    <h2 id="ViajesChile_footer">
                         VIAJES CHILE
                     </h2>
                 </div>
                 <div class="col-6">
-                    <div class="row">
+                    <div class="row justify-content-center"
+                    data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-custom-class="tooltip-azul"
+                    data-bs-title="Visita nuestras redes sociales.">
                         <div class="col-1">
                             <a href="https://github.com/">
                                 <i class="fa-brands fa-square-github display-6 text-light"></i>
@@ -219,7 +228,7 @@
                             
                         </div>
                         <div class="col-1">
-                            <a href="https://facebook.com/">
+                            <a href="https://www.facebook.com/">
                                 <i class="fa-brands fa-square-facebook display-6 text-light"></i>
                             </a>
                             
@@ -237,6 +246,7 @@
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+    <!-- js local -->
     <script src="./assets/js/script.js"></script>
 </body>
 

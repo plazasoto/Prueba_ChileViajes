@@ -1,9 +1,19 @@
-html {
+html {/*para smooth scroll*/
     scroll-behavior: smooth;
 }
 
-body{
+body{/*misma fuente para toda la página*/
     background-color: black;
     font-family: "Roboto", sans-serif;
+    
 }
 
+#ViajesChile_footer{/*el texto "VIAJES CHILE" en footer, con su propia id para no alterar los otros h2*/
+    font-weight: 300;
+}
+
+.tooltip-azul {/*formato usado en todos los tooltips implementados hasta ahora*/
+    --bs-tooltip-bg: var(--bs-primary);
+    --bs-tooltip-color: var(--bs-white);
+}
+  
